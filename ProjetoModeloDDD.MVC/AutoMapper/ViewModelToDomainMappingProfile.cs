@@ -14,10 +14,14 @@ namespace ProjetoModeloDDD.MVC.AutoMapper
             }
         }
 
+        public ViewModelToDomainMappingProfile()
+        {
+            Configure();
+        }
+
         public void Configure()
         {
-            CreateMap<Cliente, ClienteViewModel>();
-            CreateMap<Produto, ProdutoViewModel>();
+            base.CreateMap<Cliente, ClienteViewModel>().ReverseMap();
         }
     }
 }

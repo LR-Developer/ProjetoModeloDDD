@@ -30,19 +30,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IClienteRepository.cs" />
-    <Compile Include="Contracts\IProdutoRepository.cs" />
-    <Compile Include="Contracts\IRepositoryBase.cs" />
+    <Compile Include="Contracts\Repositories\IClienteRepository.cs" />
+    <Compile Include="Contracts\Repositories\IProdutoRepository.cs" />
+    <Compile Include="Contracts\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Contracts\Services\IClienteService.cs" />
+    <Compile Include="Contracts\Services\IProdutoService.cs" />
+    <Compile Include="Contracts\Services\IServiceBase.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ClienteService.cs" />
+    <Compile Include="Services\ProdutoService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,4 +1,4 @@
-﻿using ProjetoModeloDDD.Domain.Contracts;
+﻿using ProjetoModeloDDD.Domain.Contracts.Repositories;
 using ProjetoModeloDDD.Infra.Data.Contexts;
 using System;
 using System.Collections.Generic;
